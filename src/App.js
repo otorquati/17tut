@@ -11,7 +11,6 @@ import { Loader } from './components/Loader';
 
 function App() {
   
-  
   const router = createBrowserRouter(
     createRoutesFromElements(
       < Route path="/" element={<RootLayout />} >
