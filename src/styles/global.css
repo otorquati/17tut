@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 * {
   margin: 0;
@@ -12,7 +12,7 @@ html {
 
 body {
   min-height: 100vh;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: flex;
@@ -22,22 +22,24 @@ body {
 #root {
   flex-grow: 1;
   display: flex;
- /*  justify-content: center; */
-  /* align-items: center; */
+  justify-content: center;
+  align-items: center;
 }
 
-.Home {
+.App {
   width: 100%;
   max-width: 800px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   border: 1px solid #333;
   box-shadow: 0px 0px 15px gray;
 }
 
-.Header, .Footer {
+.Header,
+.Footer {
   width: 100%;
   background-color: #66d8f5;
   padding: 1rem;
@@ -64,19 +66,22 @@ body {
   width: 100%;
   background-color: #333;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   justify-content: flex-start;
   align-items: flex-start;
 }
 
 .searchForm {
-  width: 80%;
+  width: 100vw;
   padding: 1rem 0 0 0.75rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .searchForm input[type="text"] {
-  font-family: 'Open Sans', sans-serif;
-  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  width: 800px;
   min-height: 48px;
   font-size: 1rem;
   padding: 0.25rem;
@@ -101,7 +106,7 @@ body {
   padding: 1rem;
 }
 
-.Nav li:hover, 
+.Nav li:hover,
 .Nav li:focus {
   padding: 1rem;
 }
@@ -111,20 +116,24 @@ body {
   text-decoration: none;
 }
 
-.Nav li:hover, 
-.Nav li:focus, 
-.Nav li:hover a, 
-.Nav li:focus a  {
+.Nav li:hover,
+.Nav li:focus,
+.Nav li:hover a,
+.Nav li:focus a {
   background-color: #eee;
   color: #333;
 }
 
-.Nav li:hover a, 
+.Nav li:hover a,
 .Nav li:focus a {
   cursor: pointer;
 }
 
-.NewPost, .PostPage, .About, .Missing {
+.Home,
+.NewPost,
+.PostPage,
+.About,
+.Missing {
   width: 100%;
   height: 100vh;
   flex-grow: 1;
@@ -143,7 +152,7 @@ body {
   text-decoration: none;
 }
 
-.Home .post a, 
+.Home .post a,
 .Home .post a:visited {
   color: #000;
 }
@@ -174,9 +183,9 @@ body {
   margin-top: 1rem;
 }
 
-.newPostForm input[type='text'], 
+.newPostForm input[type="text"],
 .newPostForm textarea {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   width: 100%;
   min-height: 48px;
   font-size: 1rem;
@@ -200,8 +209,10 @@ body {
   cursor: pointer;
 }
 
-.Missing h2, .PostPage h2, 
-.Missing p, .PostPage p {
+.Missing h2,
+.PostPage h2,
+.Missing p,
+.PostPage p {
   margin-bottom: 1rem;
 }
 
@@ -237,19 +248,17 @@ body {
     align-items: center;
   }
 
-
   .Nav ul {
     text-align: right;
   }
 
-  .Nav li:hover, 
-  .Nav li:focus, 
-  .Nav li:hover a, 
-  .Nav li:focus a  {
+  .Nav li:hover,
+  .Nav li:focus,
+  .Nav li:hover a,
+  .Nav li:focus a {
     background-color: #eee;
     color: #333;
     gap: 30px;
-
   }
   .Nav a.active {
     color: red;
@@ -257,9 +266,9 @@ body {
 
   .searchForm {
     width: 50%;
-    padding: .5rem 0;
+    padding: 0.5rem 0;
   }
- 
+
   .searchForm input[type="text"] {
     margin-left: 0.5rem;
   }
@@ -284,11 +293,8 @@ a.active {
   color: red;
 }
 
-
 @media only screen and (min-width: 992px) {
-
   .Header svg {
     font-size: 3rem;
   }
-
 }

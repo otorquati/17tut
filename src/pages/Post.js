@@ -16,4 +16,3 @@ const Post = ({ posts }) => {
 };
 
 export default Post;
-
